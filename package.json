@@ -1,0 +1,29 @@
+{
+  "name": "is-type-guard",
+  "description": "",
+  "keywords": [
+    "typescript",
+    "is",
+    "check",
+    "type",
+    "guard"
+  ],
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@rwu823/ts-base": "github:rwu823/ts-base#latest"
+  },
+  "scripts": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
