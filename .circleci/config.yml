@@ -110,7 +110,8 @@ workflows:
   version: 2
   Test:
     jobs:
-      - test
+      - test:
+          <<: *branch_not_deploy
   Deploy:
     jobs:
       - build:
