@@ -16,5 +16,6 @@ const is = {
 }
 
 export default is
+exports = is
 
 export { ofType }
